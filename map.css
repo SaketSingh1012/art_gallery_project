@@ -117,21 +117,75 @@ body {
   display: flex;
   height: 20%;
   width: 20%;
-  background-image: url('./imgs/Group\ 9_1.png');
+  background-image: url("./imgs/Group\ 9_1.png");
   background-repeat: no-repeat;
   background-position: right;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 900px) {
   .container {
     height: 50vh;
   }
   .black-background {
-    height: 20vh;
+    height: 30vh;
     box-sizing: border-box;
   }
 
   .footer {
     height: 20vh;
+  }
+}
+
+@media (max-width: 764px) {
+  .container {
+    height: 80vh;
+  }
+  .black-background {
+    height: 70vh;
+    box-sizing: border-box;
+    justify-content: center;
+    width: 100%;
+  }
+  .flex-container {
+    padding: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 5%;
+  }
+  .three-text {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+
+  .footer {
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 5%;
+    justify-content: space-around;
+  }
+
+  .btn-arrow {
+    margin: 0;
+  }
+  .f-head {
+    width: 100%;
+  }
+  .f-mid {
+    width: 100%;
+    font-size: 16px;
+    font-style: normal;
+    margin: 0;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .f-bot {
+    width: 100%;
+    background-position: left;
   }
 }
